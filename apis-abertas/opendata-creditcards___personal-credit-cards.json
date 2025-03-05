@@ -1,0 +1,964 @@
+{
+  "data": [
+    {
+      "participant": {
+        "brand": "PICPAY",
+        "name": "PICPAY INSTITUIÇÃO DE PAGAMENTO S.A",
+        "cnpjNumber": "22896431000110"
+      },
+      "name": "Cartão Internacional Gold",
+      "identification": {
+        "product": {
+          "type": "GOLD"
+        },
+        "creditCard": {
+          "network": "MASTERCARD"
+        }
+      },
+      "rewardsProgram": {
+        "hasRewardProgram": false
+      },
+      "fees": {
+        "services": [
+          {
+            "name": "ANUIDADE_CARTAO_BASICO_INTERNACIONAL",
+            "code": "ANUIDADE_INTERNACIONAL",
+            "chargingTriggerInfo": "ANUIDADE_CARTAO_BASICO_INTERNACIONAL",
+            "prices": [
+              {
+                "interval": "1_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimum": {
+              "value": "0.00",
+              "currency": "BRL"
+            },
+            "maximum": {
+              "value": "0.00",
+              "currency": "BRL"
+            }
+          },
+          {
+            "name": "UTILIZACAO_CANAIS_ATENDIMENTO_RETIRADA_ESPECIE_BRASIL",
+            "code": "SAQUE_CARTAO_BRASIL",
+            "chargingTriggerInfo": "UTILIZACAO_CANAIS_ATENDIMENTO_RETIRADA_ESPECIE_BRASIL",
+            "prices": [
+              {
+                "interval": "1_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "value": "19.90",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimum": {
+              "value": "0.00",
+              "currency": "BRL"
+            },
+            "maximum": {
+              "value": "0.00",
+              "currency": "BRL"
+            }
+          },
+          {
+            "name": "FORNECIMENTO_SEGUNDA_VIA_FUNCAO_CREDITO",
+            "code": "EMISSAO_SEGUNDA_VIA",
+            "chargingTriggerInfo": "FORNECIMENTO_SEGUNDA_VIA_FUNCAO_CREDITO",
+            "prices": [
+              {
+                "interval": "1_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "value": "19.90",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimum": {
+              "value": "0.00",
+              "currency": "BRL"
+            },
+            "maximum": {
+              "value": "0.00",
+              "currency": "BRL"
+            }
+          },
+          {
+            "name": "PAGAMENTO_CONTAS_UTILIZANDO_FUNCAO_CREDITO",
+            "code": "TARIFA_PAGAMENTO_CONTAS",
+            "chargingTriggerInfo": "PAGAMENTO_CONTAS_UTILIZANDO_FUNCAO_CREDITO",
+            "prices": [
+              {
+                "interval": "1_FAIXA",
+                "value": "2.49",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.078778"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "value": "2.49",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.083870"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "value": "3.99",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.013219"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "value": "4.99",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.903926"
+                }
+              }
+            ],
+            "minimum": {
+              "value": "1.49",
+              "currency": "BRL"
+            },
+            "maximum": {
+              "value": "5.49",
+              "currency": "BRL"
+            }
+          }
+        ]
+      },
+      "interest": {
+        "rates": [
+          {
+            "referentialRateIndexer": "PRE_FIXADO",
+            "rate": "0.184000",
+            "applications": [
+              {
+                "interval": "1_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "indexer": {
+                  "rate": "1.000000"
+                },
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimumRate": "0.184000",
+            "maximumRate": "0.184000"
+          }
+        ],
+        "instalmentRates": [
+          {
+            "referentialRateIndexer": "PRE_FIXADO",
+            "rate": "0.184000",
+            "applications": [
+              {
+                "interval": "1_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "indexer": {
+                  "rate": "1.000000"
+                },
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimumRate": "0.184000",
+            "maximumRate": "0.184000"
+          }
+        ],
+        "otherCredits": [
+          {
+            "code": "SAQUE_A_CREDITO"
+          }
+        ]
+      },
+      "requiredWarranties": ["NAO_EXIGE_GARANTIA"],
+      "termsConditions": {
+        "minimumFeeRate": "0.100000",
+        "additionalInfo": "NA",
+        "elegibilityCriteriaInfo": "https://picpay.com/cartao-de-credito",
+        "closingProcessInfo": "https://picpay.com/cartao-de-credito"
+      }
+    },
+    {
+      "participant": {
+        "brand": "PICPAY",
+        "name": "PICPAY INSTITUIÇÃO DE PAGAMENTO S.A",
+        "cnpjNumber": "22896431000110"
+      },
+      "name": "Cartão Internacional Platinum",
+      "identification": {
+        "product": {
+          "type": "PLATINUM"
+        },
+        "creditCard": {
+          "network": "MASTERCARD"
+        }
+      },
+      "rewardsProgram": {
+        "hasRewardProgram": false
+      },
+      "fees": {
+        "services": [
+          {
+            "name": "ANUIDADE_CARTAO_BASICO_INTERNACIONAL",
+            "code": "ANUIDADE_INTERNACIONAL",
+            "chargingTriggerInfo": "ANUIDADE_CARTAO_BASICO_INTERNACIONAL",
+            "prices": [
+              {
+                "interval": "1_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "value": "588.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimum": {
+              "value": "0.00",
+              "currency": "BRL"
+            },
+            "maximum": {
+              "value": "588.00",
+              "currency": "BRL"
+            }
+          },
+          {
+            "name": "UTILIZACAO_CANAIS_ATENDIMENTO_RETIRADA_ESPECIE_BRASIL",
+            "code": "SAQUE_CARTAO_BRASIL",
+            "chargingTriggerInfo": "UTILIZACAO_CANAIS_ATENDIMENTO_RETIRADA_ESPECIE_BRASIL",
+            "prices": [
+              {
+                "interval": "1_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "value": "19.90",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimum": {
+              "value": "0.00",
+              "currency": "BRL"
+            },
+            "maximum": {
+              "value": "588.00",
+              "currency": "BRL"
+            }
+          },
+          {
+            "name": "FORNECIMENTO_SEGUNDA_VIA_FUNCAO_CREDITO",
+            "code": "EMISSAO_SEGUNDA_VIA",
+            "chargingTriggerInfo": "FORNECIMENTO_SEGUNDA_VIA_FUNCAO_CREDITO",
+            "prices": [
+              {
+                "interval": "1_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "value": "19.90",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimum": {
+              "value": "0.00",
+              "currency": "BRL"
+            },
+            "maximum": {
+              "value": "588.00",
+              "currency": "BRL"
+            }
+          },
+          {
+            "name": "PAGAMENTO_CONTAS_UTILIZANDO_FUNCAO_CREDITO",
+            "code": "TARIFA_PAGAMENTO_CONTAS",
+            "chargingTriggerInfo": "PAGAMENTO_CONTAS_UTILIZANDO_FUNCAO_CREDITO",
+            "prices": [
+              {
+                "interval": "1_FAIXA",
+                "value": "2.49",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.078778"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "value": "2.49",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.083870"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "value": "3.99",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.013219"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "value": "4.99",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.903926"
+                }
+              }
+            ],
+            "minimum": {
+              "value": "1.49",
+              "currency": "BRL"
+            },
+            "maximum": {
+              "value": "5.49",
+              "currency": "BRL"
+            }
+          }
+        ]
+      },
+      "interest": {
+        "rates": [
+          {
+            "referentialRateIndexer": "PRE_FIXADO",
+            "rate": "0.184000",
+            "applications": [
+              {
+                "interval": "1_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "indexer": {
+                  "rate": "1.000000"
+                },
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimumRate": "0.184000",
+            "maximumRate": "0.184000"
+          }
+        ],
+        "instalmentRates": [
+          {
+            "referentialRateIndexer": "PRE_FIXADO",
+            "rate": "0.184000",
+            "applications": [
+              {
+                "interval": "1_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "indexer": {
+                  "rate": "1.000000"
+                },
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimumRate": "0.184000",
+            "maximumRate": "0.184000"
+          }
+        ],
+        "otherCredits": [
+          {
+            "code": "SAQUE_A_CREDITO"
+          }
+        ]
+      },
+      "requiredWarranties": ["NAO_EXIGE_GARANTIA"],
+      "termsConditions": {
+        "minimumFeeRate": "0.100000",
+        "additionalInfo": "NA",
+        "elegibilityCriteriaInfo": "https://picpay.com/cartao-de-credito",
+        "closingProcessInfo": "https://picpay.com/cartao-de-credito"
+      }
+    },
+    {
+      "participant": {
+        "brand": "PICPAY",
+        "name": "PICPAY INSTITUIÇÃO DE PAGAMENTO S.A",
+        "cnpjNumber": "22896431000110"
+      },
+      "name": "Cartão Internacional Black",
+      "identification": {
+        "product": {
+          "type": "BLACK"
+        },
+        "creditCard": {
+          "network": "MASTERCARD"
+        }
+      },
+      "rewardsProgram": {
+        "hasRewardProgram": false
+      },
+      "fees": {
+        "services": [
+          {
+            "name": "ANUIDADE_CARTAO_BASICO_INTERNACIONAL",
+            "code": "ANUIDADE_INTERNACIONAL",
+            "chargingTriggerInfo": "ANUIDADE_CARTAO_BASICO_INTERNACIONAL",
+            "prices": [
+              {
+                "interval": "1_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "value": "1068.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimum": {
+              "value": "0.00",
+              "currency": "BRL"
+            },
+            "maximum": {
+              "value": "588.00",
+              "currency": "BRL"
+            }
+          },
+          {
+            "name": "UTILIZACAO_CANAIS_ATENDIMENTO_RETIRADA_ESPECIE_BRASIL",
+            "code": "SAQUE_CARTAO_BRASIL",
+            "chargingTriggerInfo": "UTILIZACAO_CANAIS_ATENDIMENTO_RETIRADA_ESPECIE_BRASIL",
+            "prices": [
+              {
+                "interval": "1_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "value": "19.90",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimum": {
+              "value": "0.00",
+              "currency": "BRL"
+            },
+            "maximum": {
+              "value": "588.00",
+              "currency": "BRL"
+            }
+          },
+          {
+            "name": "FORNECIMENTO_SEGUNDA_VIA_FUNCAO_CREDITO",
+            "code": "EMISSAO_SEGUNDA_VIA",
+            "chargingTriggerInfo": "FORNECIMENTO_SEGUNDA_VIA_FUNCAO_CREDITO",
+            "prices": [
+              {
+                "interval": "1_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "value": "0.00",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "value": "19.90",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimum": {
+              "value": "0.00",
+              "currency": "BRL"
+            },
+            "maximum": {
+              "value": "588.00",
+              "currency": "BRL"
+            }
+          },
+          {
+            "name": "PAGAMENTO_CONTAS_UTILIZANDO_FUNCAO_CREDITO",
+            "code": "TARIFA_PAGAMENTO_CONTAS",
+            "chargingTriggerInfo": "PAGAMENTO_CONTAS_UTILIZANDO_FUNCAO_CREDITO",
+            "prices": [
+              {
+                "interval": "1_FAIXA",
+                "value": "2.49",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.078778"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "value": "2.49",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.083870"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "value": "3.99",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.013219"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "value": "4.99",
+                "currency": "BRL",
+                "customers": {
+                  "rate": "0.903926"
+                }
+              }
+            ],
+            "minimum": {
+              "value": "1.49",
+              "currency": "BRL"
+            },
+            "maximum": {
+              "value": "5.49",
+              "currency": "BRL"
+            }
+          }
+        ]
+      },
+      "interest": {
+        "rates": [
+          {
+            "referentialRateIndexer": "PRE_FIXADO",
+            "rate": "0.184000",
+            "applications": [
+              {
+                "interval": "1_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "indexer": {
+                  "rate": "1.000000"
+                },
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimumRate": "0.184000",
+            "maximumRate": "0.184000"
+          }
+        ],
+        "instalmentRates": [
+          {
+            "referentialRateIndexer": "PRE_FIXADO",
+            "rate": "0.184000",
+            "applications": [
+              {
+                "interval": "1_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "2_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "3_FAIXA",
+                "indexer": {
+                  "rate": "0.000000"
+                },
+                "customers": {
+                  "rate": "0.000000"
+                }
+              },
+              {
+                "interval": "4_FAIXA",
+                "indexer": {
+                  "rate": "1.000000"
+                },
+                "customers": {
+                  "rate": "1.000000"
+                }
+              }
+            ],
+            "minimumRate": "0.184000",
+            "maximumRate": "0.184000"
+          }
+        ],
+        "otherCredits": [
+          {
+            "code": "SAQUE_A_CREDITO"
+          }
+        ]
+      },
+      "requiredWarranties": ["NAO_EXIGE_GARANTIA"],
+      "termsConditions": {
+        "minimumFeeRate": "0.100000",
+        "additionalInfo": "NA",
+        "elegibilityCriteriaInfo": "https://picpay.com/cartao-de-credito",
+        "closingProcessInfo": "https://picpay.com/cartao-de-credito"
+      }
+    }
+  ],
+  "links": {
+    "self": "https://resources.openbanking.picpay.com/open-banking/opendata-creditcards/v1/personal-credit-cards?page=1&page-size=25",
+    "first": "https://resources.openbanking.picpay.com/open-banking/opendata-creditcards/v1/personal-credit-cards?page=1&page-size=25",
+    "last": "https://resources.openbanking.picpay.com/open-banking/opendata-creditcards/v1/personal-credit-cards?page=1&page-size=25"
+  },
+  "meta": {
+    "totalRecords": 1,
+    "totalPages": 1
+  }
+}
