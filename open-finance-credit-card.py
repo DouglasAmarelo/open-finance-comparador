@@ -5,13 +5,52 @@ This script will get the data from the API and print it to the console
 import requests
 import pandas as pd
 
-# API_BASE_URL = "https://resources.openbanking.picpay.com/open-banking/opendata-creditcards/v1/personal-credit-cards"
-API_BASE_URL = "https://btgmais.openbanking.btgpactual.com/open-banking/opendata-creditcards/v1/personal-credit-cards"
-API_PARAMS = {"page": 1, "page-size": 25}
+# Lista de URLs das APIs
+OF_APIS = {
+    "https://api.itau/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://opendata.api.nubank.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://resources.openbanking.picpay.com/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://openbanking.api.santander.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://openbanking.bib.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api.mercadopago.com/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://opendata.api.bb.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api-bmg.bancobmg.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api.bradesco.com/next/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api.bradesco.com/bradesco/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://openbanking.banrisul.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api-openbanking.bancopan.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api.safra.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://banking-openfinance.xpi.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://banking-openfinance.xpi.com.br/rico/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://banking-openfinance-azimutbrasil.xpi.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://banking-openfinance.xpi.com.br/clear/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://banking-openfinance.xpi.com.br/modal/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://banking-openfinance-montebravo.xpi.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://banking-openfinance-whg.xpi.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api-openbanking.bvopen.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api.sicredi.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api-opf.asa.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://ob-api.sisprimedobrasil.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://openfinance.sicoob.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://authorization.openapi.sofisa.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api.openbanking.caixa.gov.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api.bradesco.com/bradescard/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api.e-unicred.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://apps.neon.com.br/open-finance/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://openbanking.digio.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://btgmais.openbanking.btgpactual.com/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    "https://api.openfinance.bnb.gov.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+}
 
 
-def get_data(api, params):
-    response = requests.get(api, params=params)
+def get_data(api_url):
+    """
+    Função para obter os dados da API
+    :param api_url: URL da API
+    :return: Dados da API
+    """
+
+    response = requests.get(api_url, params={"page": 1, "page-size": 25}, timeout=100)
 
     if response.status_code != 200:
         print(f"Failed to get data: {response.status_code}")
@@ -82,25 +121,47 @@ def process_cards_data(cards_data):
                 )
 
     # return processed_data
-    return {
-        "processed_cards_data": processed_cards_data,
-        "processed_fees_data": processed_fees_data,
-        "processed_interest_data": processed_interest_data,
-    }
+    return processed_cards_data, processed_fees_data, processed_interest_data
 
 
-def main():
+def combine_data_from_api(api_list):
     """
-    Função principal
+    Função para combinar os dados de várias APIs
+    :param api_list: Lista de URLs da API
+    :return: Dados combinados
     """
 
-    cards_data = get_data(API_BASE_URL, API_PARAMS)
-    cards_processed_data = process_cards_data(cards_data)
+    # Lista para armazenar todos os dados
+    all_processed_cards_data = []
+    all_fees_data = []
+    all_interest_data = []
+
+    # Iterando sobre a lista de APIs e processando os dados
+    for api_url in api_list:
+        cards_data = get_data(api_url)
+        processed_cards_data, processed_fees_data, processed_interest_data = (
+            process_cards_data(cards_data)
+        )
+        all_processed_cards_data.extend(processed_cards_data)
+        all_fees_data.extend(processed_fees_data)
+        all_interest_data.extend(processed_interest_data)
+
+    return all_processed_cards_data, all_fees_data, all_interest_data
+
+
+def combine_into_dataframe(processed_data):
+    """
+    Função para combinar os dados processados em um DataFrame
+    :param processed_data: Dados processados
+    :return: DataFrame
+    """
+
+    all_processed_cards_data, all_fees_data, all_interest_data = processed_data
 
     # Convertendo as listas em DataFrames: Tarifas, Taxas de juros e Informações principais do cartão
-    fees_df = pd.DataFrame(cards_processed_data["processed_fees_data"])
-    interest_df = pd.DataFrame(cards_processed_data["processed_interest_data"])
-    cards_df = pd.DataFrame(cards_processed_data["processed_cards_data"])
+    cards_df = pd.DataFrame(all_processed_cards_data)
+    fees_df = pd.DataFrame(all_fees_data)
+    interest_df = pd.DataFrame(all_interest_data)
 
     # Exibindo as três informações no mesmo DataFrame
     # Para combinar as informações, vamos garantir que a coluna de 'card_name' seja a chave comum para as junções
@@ -135,9 +196,33 @@ def main():
     # Agora, vamos combinar os DataFrames de tarifas e taxas de juros
     combined_df = pd.concat([fees_df_combined, interest_df_combined], ignore_index=True)
 
+    return combined_df
+
+
+def export_to_csv(dataframe, filename):
+    """
+    Função para exportar o DataFrame para um arquivo CSV
+    :param dataframe: DataFrame a ser exportado
+    :param filename: Nome do arquivo CSV
+    """
+
+    dataframe.to_csv(filename, index=False)
+
+
+def main():
+    """
+    Função principal
+    """
+
     # Exibindo o DataFrame combinado
-    # print(combined_df)
-    display(combined_df)
+    combined_data = combine_data_from_api(OF_APIS)
+    combined_df = combine_into_dataframe(combined_data)
+
+    print(combined_df)
+    # display(combined_df)
+
+    # Exportando o DataFrame para um arquivo CSV
+    export_to_csv(combined_df, "credit_card_data.csv")
 
 
 if __name__ == "__main__":
