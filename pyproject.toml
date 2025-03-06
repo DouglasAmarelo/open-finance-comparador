@@ -1,0 +1,18 @@
+[project]
+name = "open-finance-comparador"
+version = "0.1.0"
+description = "O projeto open-finance-comparador tem como objetivo comparar os dados de instituições financeiras disponíveis no Open Finance."
+authors = [
+    {name = "@DouglasAmarelo"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "pandas (>=2.2.3,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
