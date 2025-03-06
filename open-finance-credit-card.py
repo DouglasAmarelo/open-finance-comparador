@@ -10,14 +10,7 @@ OF_APIS = {
     "https://api.itau/open-banking/opendata-creditcards/v1/personal-credit-cards",
     "https://opendata.api.nubank.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
     "https://resources.openbanking.picpay.com/open-banking/opendata-creditcards/v1/personal-credit-cards",
-    "https://openbanking.api.santander.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
-    "https://openbanking.bib.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
     "https://api.mercadopago.com/open-banking/opendata-creditcards/v1/personal-credit-cards",
-    "https://opendata.api.bb.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
-    "https://api-bmg.bancobmg.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
-    "https://api.bradesco.com/next/open-banking/opendata-creditcards/v1/personal-credit-cards",
-    "https://api.bradesco.com/bradesco/open-banking/opendata-creditcards/v1/personal-credit-cards",
-    "https://openbanking.banrisul.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
     "https://api-openbanking.bancopan.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
     "https://api.safra.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
     "https://banking-openfinance.xpi.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
@@ -31,15 +24,22 @@ OF_APIS = {
     "https://api.sicredi.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
     "https://api-opf.asa.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
     "https://ob-api.sisprimedobrasil.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
-    "https://openfinance.sicoob.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
     "https://authorization.openapi.sofisa.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
-    "https://api.openbanking.caixa.gov.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
-    "https://api.bradesco.com/bradescard/open-banking/opendata-creditcards/v1/personal-credit-cards",
     "https://api.e-unicred.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
-    "https://apps.neon.com.br/open-finance/open-banking/opendata-creditcards/v1/personal-credit-cards",
-    "https://openbanking.digio.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
     "https://btgmais.openbanking.btgpactual.com/open-banking/opendata-creditcards/v1/personal-credit-cards",
     "https://api.openfinance.bnb.gov.br/open-banking/opendata-creditcards/v1/personal-credit-cards",
+    # "https://openbanking.api.santander.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",  # Erro!
+    # "https://openbanking.bib.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",  # Erro!
+    # "https://opendata.api.bb.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",  # Erro!
+    # "https://api-bmg.bancobmg.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",  # Erro!
+    # "https://api.bradesco.com/next/open-banking/opendata-creditcards/v1/personal-credit-cards",  # Erro!
+    # "https://api.bradesco.com/bradesco/open-banking/opendata-creditcards/v1/personal-credit-cards",  # Erro!
+    # "https://openbanking.banrisul.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",  # Erro!
+    # "https://openfinance.sicoob.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",  # Erro!
+    # "https://api.openbanking.caixa.gov.br/open-banking/opendata-creditcards/v1/personal-credit-cards",  # Erro!
+    # "https://api.bradesco.com/bradescard/open-banking/opendata-creditcards/v1/personal-credit-cards",  # Erro!
+    # "https://apps.neon.com.br/open-finance/open-banking/opendata-creditcards/v1/personal-credit-cards",  # Erro!
+    # "https://openbanking.digio.com.br/open-banking/opendata-creditcards/v1/personal-credit-cards",  # Erro!
 }
 
 
