@@ -214,6 +214,11 @@ def main():
     Função principal
     """
 
+    # Verificando se há URLs de API fornecidas
+    if not OF_APIS:
+        print("No API URLs provided.")
+        return
+
     # Exibindo o DataFrame combinado
     combined_data = combine_data_from_api(OF_APIS)
     combined_df = combine_into_dataframe(combined_data)
