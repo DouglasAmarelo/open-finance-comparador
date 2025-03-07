@@ -132,7 +132,7 @@ def combine_data_from_api(api_list):
     """
 
     # Lista para armazenar todos os dados
-    all_processed_cards_data = []
+    all_cards_data = []
     all_fees_data = []
     all_interest_data = []
 
@@ -142,11 +142,11 @@ def combine_data_from_api(api_list):
         processed_cards_data, processed_fees_data, processed_interest_data = (
             process_cards_data(cards_data)
         )
-        all_processed_cards_data.extend(processed_cards_data)
+        all_cards_data.extend(processed_cards_data)
         all_fees_data.extend(processed_fees_data)
         all_interest_data.extend(processed_interest_data)
 
-    return all_processed_cards_data, all_fees_data, all_interest_data
+    return all_cards_data, all_fees_data, all_interest_data
 
 
 def combine_into_dataframe(processed_data):
